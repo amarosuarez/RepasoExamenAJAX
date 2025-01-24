@@ -3,6 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <title>Hola Fernando</title>
+    <style>
+        #btnEditar {
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -10,6 +15,7 @@
         <input type="number" id="inputId" placeholder="Introduce el id" />
         <button id="btnBuscar">Buscar persona</button>
         <button id="btnEliminar">Eliminar persona</button>
+        <button id="btnEditarPer">Editar persona</button>
     </div>
     <br />
     <br />
@@ -23,6 +29,7 @@
         <label for="edad">Edad:</label>
         <input type="number" min="0" max="130" name="edad" placeholder="Nombre" id="inputEdad" />
         <button id="btnAdd">Añadir</button>
+        <button id="btnEditar">Editar</button>
     </div>
     <div id="contenido"></div>
     <script src="../js/site.js"></script>

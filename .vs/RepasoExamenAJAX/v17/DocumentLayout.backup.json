@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{746BFFC2-1512-4E45-A183-F136B8E6D754}|UI\\UI.csproj|c:\\users\\asuarez\\vscode\\repositorios\\sgemp\\repasoexamenajax\\ui\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{746BFFC2-1512-4E45-A183-F136B8E6D754}|UI\\UI.csproj|solutionrelative:ui\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{746BFFC2-1512-4E45-A183-F136B8E6D754}|UI\\UI.csproj|c:\\users\\asuarez\\vscode\\repositorios\\sgemp\\repasoexamenajax\\ui\\wwwroot\\pages\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{746BFFC2-1512-4E45-A183-F136B8E6D754}|UI\\UI.csproj|solutionrelative:ui\\wwwroot\\pages\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\UI\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "UI\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\UI\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "UI\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAABEBAAAAAAAAAAAIwAABAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-24T07:32:38.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\UI\\wwwroot\\pages\\index.html",
+              "RelativeDocumentMoniker": "UI\\wwwroot\\pages\\index.html",
+              "ToolTip": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\UI\\wwwroot\\pages\\index.html",
+              "RelativeToolTip": "UI\\wwwroot\\pages\\index.html",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-24T07:34:36.74Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

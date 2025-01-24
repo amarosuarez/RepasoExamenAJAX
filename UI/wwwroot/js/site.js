@@ -14,6 +14,7 @@
 
 window.onload = function () {
     let id;
+    let personaSeleccionada;
 
     /**
      * Función que obtiene todas las personas de la API
@@ -204,6 +205,77 @@ window.onload = function () {
         miLlamada.send(json)
     }
 
+    /**
+     * Función que modifica una persona
+     * @param {any} id ID de la persona a modificar
+     */
+    function modificarPersona(id) {
+        var miLlamada = new XMLHttpRequest();
+
+        miLlamada.open("GET", "http://localhost:5035/api/personas/" + id);
+
+        // Definición de estados
+        miLlamada.onreadystatechange = function () {
+            if (miLlamada.readyState < 4) {
+                // Podriamos mostrar un gif, pero al ser en local no va a haber un gran tiempo de espera
+            } else {
+                if (miLlamada.readyState == 4 && miLlamada.status == 200) {
+                    let per = JSON.parse(miLlamada.responseText);
+
+                    let persona = new clsPersona(per.id, per.nombre, per.apellidos, per.edad);
+
+
+                    let nombre = document.getElementById("inputNombre");
+                    let apellidos = document.getElementById("inputApellidos");
+                    let edad = document.getElementById("inputEdad");
+                    let btnEditar = document.getElementById("btnEditar");
+
+                    nombre.innerHTML = persona.nombre;
+                    nombre.value = persona.nombre;
+                    apellidos.innerHTML = persona.apellidos;
+                    apellidos.value = persona.apellidos;
+                    edad.innerHTML = edad.value;
+                    edad.value = persona.edad;
+                    btnEditar.style.visibility = "visible";
+
+                    btnEditar.addEventListener("click", function () {
+                        console.log(persona.id);
+                        var miLlamadaPut = new XMLHttpRequest()
+
+                        miLlamadaPut.open("PUT", "http://localhost:5035/api/personas/" + persona.id)
+
+                        miLlamadaPut.setRequestHeader('Content-type', 'application/json charset=utf-8')
+
+                        let personaModificada = new clsPersona(persona.id, nombre.value, apellidos.value, edad.value)
+
+                        var json = JSON.stringify(personaModificada)
+
+                        // Definicion estados
+                        miLlamadaPut.onreadystatechange = function () {
+                            if (miLlamadaPut.readyState < 4) {
+                                //aquí se puede poner una imagen de un reloj o un texto “Cargando”
+                            } else if (miLlamadaPut.readyState == 4 && miLlamadaPut.status == 200) {
+                                alert("Persona modificada con exito")
+                                nombre.innerHTML = "";
+                                nombre.value = "";
+                                apellidos.innerHTML = "";
+                                apellidos.value = "";
+                                edad.innerHTML = "";
+                                edad.value = 0;
+                                obtenerPersonas()
+                            }
+                        }
+
+                        miLlamadaPut.send(json)
+                    })
+
+                }
+            }
+        }
+
+        miLlamada.send();
+    }
+
     document.getElementById("btnListar").addEventListener("click", function () {
         obtenerPersonas();
     })
@@ -223,16 +295,28 @@ window.onload = function () {
     })
 
     document.getElementById("btnAdd").addEventListener("click", function () {
-        console.log("HHH")
         let nombre = document.getElementById("inputNombre").value;
         let apellidos = document.getElementById("inputApellidos").value;
         let edad = document.getElementById("inputEdad").value;
+
+        document.getElementById("btnAdd").style.visibility = "visible";
+        document.getElementById("btnEditar").style.visibility = "hidden";
 
         if (nombre == "" || apellidos == "" || edad == "") {
             alert("Rellena los campos");
         } else {
             let persona = new clsPersona(0, nombre, apellidos, edad);
             addPersona(persona);
+        }
+    })
+
+    document.getElementById("btnEditarPer").addEventListener("click", function () {
+        console.log(id);
+        if (id === "" || id === null || id === undefined || id < 0) {
+            alert("Selecciona una persona");
+        } else {
+            document.getElementById("btnAdd").style.visibility = "hidden";
+            modificarPersona(id);
         }
     })
 }

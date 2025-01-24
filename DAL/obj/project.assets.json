@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amsuv\\.nuget\\packages\\": {},
+    "C:\\Users\\asuarez\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amsuv\\source\\repos\\SGEMP\\RepasoExamenAjax\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\amsuv\\source\\repos\\SGEMP\\RepasoExamenAjax\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\amsuv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amsuv\\source\\repos\\SGEMP\\RepasoExamenAjax\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\asuarez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\amsuv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +59,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\amsuv\\source\\repos\\SGEMP\\RepasoExamenAjax\\ENT\\ENT.csproj": {
-              "projectPath": "C:\\Users\\amsuv\\source\\repos\\SGEMP\\RepasoExamenAjax\\ENT\\ENT.csproj"
+            "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\ENT\\ENT.csproj": {
+              "projectPath": "C:\\Users\\asuarez\\VSCODE\\REPOSITORIOS\\SGEMP\\RepasoExamenAJAX\\ENT\\ENT.csproj"
             }
           }
         }
